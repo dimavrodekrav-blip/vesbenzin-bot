@@ -1,0 +1,16 @@
+[Unit]
+Description=VesBenzin Moscow Telegram Bot (@vesbenzin_msk_bot)
+After=network.target
+
+[Service]
+Type=simple
+User=vesbenzin
+Group=vesbenzin
+WorkingDirectory=/opt/vesbenzin_bot
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/vesbenzin_bot/.venv/bin/python main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

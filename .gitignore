@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+bot.log
+vesbenzin_data.db
+vesbenzin_data.db-wal
+vesbenzin_data.db-shm
+research/.venv/
+research/.tg_session*
+research/audit_report*.json
